@@ -3,7 +3,6 @@ pipeline {
 
     tools {
         nodejs "Node"
-        dependencyCheck 'Dependency-Check'
     }
 
     stages {
