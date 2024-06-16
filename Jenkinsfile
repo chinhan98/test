@@ -1,7 +1,10 @@
 pipeline {
     agent any
 
-    tools {nodejs "Node"}
+    tools {
+        nodejs "Node"
+        dependencyCheck 'Dependency-Check'
+    }
 
     stages {
         stage('Build') { 
